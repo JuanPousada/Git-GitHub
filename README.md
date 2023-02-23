@@ -87,3 +87,43 @@ Para las siguientes actualizaciones, si no hay cambios de rama, utilizaras simpl
 Si quiero descargar todos los cambios realizas desde GitHub utilizo:
 
 `git pull`
+
+## De _master_ a _main_
+
+### Para repositorios nuevos
+
+Si voy a crear nuevos repositorio voy a cambiar ya desde el inicio _master_ por _main_. Para ello utilizare:
+
+```
+git init
+git add .
+git commit -m "Primer commit"
+git branch -M main
+git remote add origin https://github.com/usuario/repositorio.git
+git push -u origin main
+```
+
+### Para repositorios existentes
+
+Utilizaremos los siguientes comandos:
+
+```
+git branch -M main
+git remote add origin https://github.com/usuario/repositorio.git
+git push -u origin main
+```
+
+### Para reemplazar la rama _master_ por _main_
+
+Para remplazar la rama _master_ por _main_ en GitHub debo usar los siguientes pasos:
+
+1. `git branch -m master main`
+
+2. `git push -u origin main`
+
+3. `git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main`
+
+4. Debo cambiar la rama _default_ de _master_ a _main_ en el repositorio GitHub.
+   Para eso voy a _settings_ en el repositorio, voy a la opcion _branches_ y cambio la nueva rama por default de _master_ a _main_.
+
+5. `git push origin --delete master`

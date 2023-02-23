@@ -69,3 +69,21 @@ Se abrirá el editor de codigo asignado anteriormente y en su primera linea debe
 Hay un shortcut del comando anterios que nos permite hacer esto mismo pero sin la necesidad de abrir el editor de texto. Este sería:
 
 `git commit -m "mensaje descriptivo del cambio`
+
+Para agregar el origen remoto de el repositorio de GitHub utilizare el comando:
+
+`git remote add origin https://github.com/usuario/repositorio.git`
+
+Este mismo comando te lo dará GitHub cuando crees un repositorio en la pagina con el correspondiente usuario y nombre del repositorio.
+
+La primera vez que vinculamos el repositorio remoto con el local debemos utilizar el comando:
+
+`git push -u origin master`
+
+Para las siguientes actualizaciones, si no hay cambios de rama, utilizaras simplemente:
+
+`git push`
+
+Si quiero descargar todos los cambios realizas desde GitHub utilizo:
+
+`git pull`

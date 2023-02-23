@@ -51,3 +51,21 @@ Consta de cuatro estados, tres locales y uno remoto. Estos estados son **_modifi
 4. **_Remote Repository_**: Corresponde al estado **_remote_** y es el directorio remoto donde almacenamos los archivos del proyecto el alguna plataforma _web_. _Git_ denomina **_origin_** al repositorio remoto.
 
 ![Flujo básico de Git & GitHub](https://jonmircha.com/img/blog/git-flow.png)
+
+Para agregar los cambios de un archivo al **_staged_** debo utilizar el comando:
+
+`git add archivo/directorio`
+
+En caso de que quiera agragar todos los cambio de todos los archivos al **_staged_** entonces:
+
+`git add .`
+
+Para que los archivos sean comprometidos en el repositorio debo utilizar el comando:
+
+`git commit`
+
+Se abrirá el editor de codigo asignado anteriormente y en su primera linea deberás escribir el mensaje del cambio.
+
+Hay un shortcut del comando anterios que nos permite hacer esto mismo pero sin la necesidad de abrir el editor de texto. Este sería:
+
+`git commit -m "mensaje descriptivo del cambio`

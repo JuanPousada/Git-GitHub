@@ -127,3 +127,51 @@ Para remplazar la rama _master_ por _main_ en GitHub debo usar los siguientes pa
    Para eso voy a _settings_ en el repositorio, voy a la opcion _branches_ y cambio la nueva rama por default de _master_ a _main_.
 
 5. `git push origin --delete master`
+
+## Ayuda
+
+Si necesito ayuda para los comando de _git_ puedo usar los siguientes codigos en la terminal:
+
+- Para ayuda desde la terminal:
+
+  `git nombrecomando -h`
+
+- Para ayuda desde el navegador:
+
+  `git help nombrecomando`
+
+## Ignorar Archivos
+
+En el archivo _gitignore_ incluimos todo lo que **NO** queramos incluir en nuestro repositorio.
+
+Si son archivos o carpetas especificas, unicamente tengo que poner su nombre
+
+```
+archivo.ext
+carpeta
+/archivo_desde_raiz.ext
+```
+
+Si tengo que ignorar todos los archivos con un tipo de extension:
+
+```
+*.ext
+```
+
+Y si quiero que sean todos excepto alguno en particular uso:
+
+```
+!.ext
+```
+
+Para ignorar archivos ciertos archivos dentro de una carpeta pongo la ubicacion y lo que quiero ignorar:
+
+```
+doc/*.txt
+```
+
+En caso de que haya subcarpetas las cuales tambien queres ignorarlas, utilizo:
+
+```
+doc/**/*.txt
+```

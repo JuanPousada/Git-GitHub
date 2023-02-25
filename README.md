@@ -175,3 +175,47 @@ En caso de que haya subcarpetas las cuales tambien queres ignorarlas, utilizo:
 ```
 doc/**/*.txt
 ```
+
+## Clonar Repositorio
+
+Si quiero clonar un repositorio, no importa de quien sea, simplemente tengo que escribir el comando:
+
+```
+git clone urldelrepositorio.git
+```
+
+En _GitHub_ ya te da la opcion de copiar la URL junto con _.git_ al final de la misma.
+
+## Ramas
+
+Una rama nos permite aislar una funcionalidad del codigo. Sirve para crear codigos paralelos al codigo _main_ y luego añadirlos a codigo principal.
+
+```
+# crear rama
+git branch nombre-rama
+
+# cambiar de rama
+git checkout nombre-rama
+
+# crear una rama y cambiarte a ella
+git checkout -b rama
+
+# eliminar rama
+git branch -d nombre-rama
+
+# forzar eliminar rama
+git branch -D nombre-rama
+
+# listar todas las ramas del repositorio
+git branch
+
+# listar ramas no fusionadas a la rama actual
+git branch --no-merged
+
+# lista ramas fusionadas a la rama actual
+git branch --merged
+
+# rebasar ramas
+git checkout rama-secundaria
+git rebase rama-principal
+```

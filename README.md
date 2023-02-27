@@ -494,3 +494,33 @@ git add .
 git tag -a "v1.0.0" -m "Mensaje de la etiqueta"
 git push --tags
 ```
+
+## **_Github Pages_**
+
+`gh-pages` es una rama especial para crear un sitio web a tu proyecto alojado directamente en tu repositorio GitHub.
+
+La url del repositorio será "https://usuario.github.io/repositorio"
+
+Para crear esta rama especial debo ejecutar estos comandos:
+
+```markdown
+# Crear rama y cambiarse a ella
+
+git checkout -b gh-pages
+
+# Añadir origen remoto
+
+git remote add origin https://github.com/usuario/repositorio.git
+
+# Añadir rama al repositorio
+
+git push origin gh-pages
+
+# Descargar cambios del remoto al local
+
+git pull origin gh-pages
+```
+
+[Official Site](https://juanpousada.github.io/learning-git/)
+
+Pagina creada por [JuanPousada](https://github.com/JuanPousada)

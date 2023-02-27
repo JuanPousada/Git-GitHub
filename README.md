@@ -243,3 +243,33 @@ git merge rama-secundaria
 ```
 
 En el caso de que la fusión sea _**Manual Merge**_ hay que resolver los problemas de duplicados seleccionando que es lo que quede en el archivo.
+
+## Cambios
+
+Se pueden modificar los ultimos cambios realizados.
+
+```
+# Agrega los cambios sin editar el mensaje del ultimo commit
+
+git commit --amend --no-edit
+
+# Edita el mensaje del ultimo commit
+
+git commit --amend -m "Nuevo mensaje para el último commit"
+
+# Elimina el ultimo commit
+
+git reser --hard HEAD~1
+```
+
+Podemos viajar entre el historial del repositorio sin afectar el repositorio como tal.
+
+```
+git checkout id-commit
+```
+
+Para saber el _id-commit_ utilizo el comando `git log --oneline` y podre ver el historial de commits realizados.
+
+**_MUY IMPORTANTE!!!_**
+
+El realizar cambios despues de hacer un _push_ va a provocar conflictos los cuales tendremos que resolver de forma manual y luego crear un nuevo _commit_ con esos problemas resueltos.

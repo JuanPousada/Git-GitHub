@@ -219,3 +219,27 @@ git branch --merged
 git checkout rama-secundaria
 git rebase rama-principal
 ```
+
+## Fusiones
+
+Las fusiones se usan para unir dos ramas. Para ello debo encontrarme en la rama a la cual se le van a fusionar las ramas indicadas.
+
+Hay dos tipos de fusiones:
+
+- _**Fast-Forward**_: La fusión se hace automaticamente y no hay problemas resultantes.
+
+- _**Manual Merge**_: En este caso la fusión se hará manualmente ya que se encontraron problemas con duplicación de archivos.
+
+Los comandos para fusionar son:
+
+```
+# Primero hacemos el cambio a la rama principal donde se hará la fusión
+
+git checkout rama-principal
+
+# Ejecutamos el comando de fusión con la rama que se va a fusionar con la principal.
+
+git merge rama-secundaria
+```
+
+En el caso de que la fusión sea _**Manual Merge**_ hay que resolver los problemas de duplicados seleccionando que es lo que quede en el archivo.

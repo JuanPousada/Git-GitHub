@@ -521,6 +521,10 @@ git push origin gh-pages
 git pull origin gh-pages
 ```
 
+## Colaboración en GitHub
+
+Tamos probando cosas mi rey
+
 [Official Site](https://juanpousada.github.io/learning-git/)
 
 Pagina creada por [JuanPousada](https://github.com/JuanPousada)

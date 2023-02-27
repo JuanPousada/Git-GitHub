@@ -333,3 +333,35 @@ git reset id-commit
 # Desechar todo el historial y regresa al commit especificado
 git reset --hard id-commit
 ```
+
+## Resetear un repositorio
+
+Se puede resetear el historial de cambioas de un repositorio para que quede como si lo acabarás de crear.
+
+```
+# Entrar en el repositorio
+cd carpeta-repositorio
+
+# Mover el archivo de configuracion a el directorio del usuario
+mv .git/config ~/saved_git_config
+
+# Forzar la eliminación de directorio .git
+rm -rf .git
+
+# Inicializar el directorio
+git init
+
+# Añadir todos los archivos
+git add .
+
+# Añadir el nuevo primer commit
+git commit -m "Primer commit"
+
+# Restaurar el archivo de la configuración
+mv ~/saved_git_config .git/config
+
+# Forzar el push para que no haya problemas
+git push --force origin main
+```
+
+Esta práctica se suele realizar par no tener tantas versiones o commits del archivo y ahorrar espacio. Es mas que nada para repositorios personales los cuales no haya problema con necesitar el historial de commits. No es recomendable hacerlo en un repositorio importante.

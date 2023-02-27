@@ -521,8 +521,7 @@ git push origin gh-pages
 git pull origin gh-pages
 ```
 
-Se supone que deberia funcionar por dios ojala si, espero que ahora si
-PORFAVOR
+## Colaboración en GitHub
 
 [Official Site](https://juanpousada.github.io/learning-git/)
 

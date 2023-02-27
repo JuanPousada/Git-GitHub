@@ -309,3 +309,27 @@ git diff
 # Mostrar en forma de grafico los cambios realizados
 git log --oneline --graph --all
 ```
+
+## Reseteo del historial
+
+Podemos eliminar el historial de cambios de un proyecto.
+
+```
+# Mostrar listado de archivos nuevos, borrados o editados
+git status
+
+# Borrar HEAD
+git reset --soft
+
+# Borrar HEAD y Staging
+git reset --mixed
+
+# Borrar HEAD, Staging y Working Directory
+git reset --hard
+
+# Deshacer todos los cambios despues del commit indicado, preservando los cambios locales
+git reset id-commit
+
+# Desechar todo el historial y regresa al commit especificado
+git reset --hard id-commit
+```

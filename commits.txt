@@ -1,0 +1,129 @@
+commit acb209f4178033f742431a622b4884ad73886cdc
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Mon Feb 27 00:15:29 2023 -0300
+
+    Agregando teoria de Cambios
+
+commit 610765e21c200abcd9b940aaa71ac0197e1fbaeb
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Sun Feb 26 23:55:59 2023 -0300
+
+    Agregando 2 parrafos
+
+commit 30d2ef89d8f2a68ab81b4243b0e7ef79f106889e
+Merge: f949c7e ecc6700
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Sun Feb 26 23:53:29 2023 -0300
+
+    Resolviendo conflicto en Estaciones del año y fechas de inicio
+
+commit f949c7e6b0c2b011ca0ce584fb2852776656e35c
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Sun Feb 26 23:38:03 2023 -0300
+
+    Agregando Estaciones del año con fecha de inicio
+
+commit ecc67008c846e8c1c6ead8eeda680eed68b75bef
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Sun Feb 26 23:38:03 2023 -0300
+
+    Agregando Estaciones del año
+
+commit 9957639372a4087adb3dd13901fe05d13e2db3a3
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Sun Feb 26 23:34:05 2023 -0300
+
+    Agragando teoria de Fusiones
+
+commit ed6ca69238170a991911019f194a4134a26e5256
+Merge: 7861e9a 2882042
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Sat Feb 25 15:55:07 2023 -0300
+
+    Resolviendo conflicto merge main/html en el documento index.html
+
+commit 28820426512f8086f4ee9790f5a52fc5ce77e534
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Sat Feb 25 15:49:24 2023 -0300
+
+    Agragando index.js al index.html
+
+commit 7861e9a4efcfaafe475a809a324e8f586121ff5d
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Sat Feb 25 15:46:49 2023 -0300
+
+    Agragando style.css al index.html
+
+commit 5924e58ab52a1c658bc591c59b29ca1aff887274
+Merge: 5992c44 e1effb8
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Sat Feb 25 15:32:35 2023 -0300
+
+    Merge branch 'js'
+
+commit e1effb87baca5c4c6f44e6228fb859eb53e225d5
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Sat Feb 25 15:25:54 2023 -0300
+
+    Creando index.js
+
+commit 5992c44cebad803d4891ec99a5e11db1ab460b3e
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Sat Feb 25 15:20:56 2023 -0300
+
+    Creando style.css
+
+commit 6b2f62d892b8dc6888bfbed88083db97e2e26bec
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Sat Feb 25 15:15:36 2023 -0300
+
+    Creando index.html}
+
+commit 610b86368fb15ac2ddad45d230c95af4210c40aa
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Sat Feb 25 14:03:50 2023 -0300
+
+    Ignorando Archivos .exe
+
+commit 2883532c0a576acc16aea9b1a85ff8c60a7d43f9
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Thu Feb 23 13:35:46 2023 -0300
+
+    Articulo De master a main
+
+commit 0a780e8c5edf9824d7173ba3158b2a8f7e256bcc
+Merge: 62ad5d8 d4af9b6
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Thu Feb 23 13:04:26 2023 -0300
+
+    Merge branch 'master' of https://github.com/JuanPousada/learning-git
+
+commit 62ad5d8c677246f09870478500e4264bba367a32
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Thu Feb 23 13:03:11 2023 -0300
+
+    Más informacion al README
+
+commit d4af9b69812518b905a65cfc9592a23304f75297
+Author: Juan Pousada <125465705+JuanPousada@users.noreply.github.com>
+Date:   Thu Feb 23 13:00:58 2023 -0300
+
+    Creando licencia del repositorio
+
+commit 7a358981e995b12bb67f48e94430da77319b920c
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Thu Feb 23 12:43:18 2023 -0300
+
+    Cambio de archivos Teoria.md a README.md
+
+commit b020c9654a3b73ae6b8d735da7f071e7f2daf2e7
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Thu Feb 23 12:28:46 2023 -0300
+
+    Agregando mas contenido a la teoria
+
+commit b00c1c07b9d1b9951e6a72146ed0b5f1c37a2b04
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Thu Feb 23 12:16:04 2023 -0300
+
+    Primer commit

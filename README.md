@@ -273,3 +273,39 @@ Para saber el _id-commit_ utilizo el comando `git log --oneline` y podre ver el 
 **_MUY IMPORTANTE!!!_**
 
 El realizar cambios despues de hacer un _push_ va a provocar conflictos los cuales tendremos que resolver de forma manual y luego crear un nuevo _commit_ con esos problemas resueltos.
+
+## Registo del historial
+
+El comando `git log` nos permite conocer todo el historial de un proyecto.
+
+```
+# Mostrar en una sola línea
+git log --oneline
+
+# Guardar el log en la ruta y archivo que especificamos
+git log > commits.txt
+
+# Mostrar el historial con el formato que indicamos
+git log --pretty=format:"%h - %an, %ar : %s"
+
+# Mostrar cierta cantidad de cambios, remplazando la n por la cantidad
+git log -n
+
+# Mostrar cambios realizados después de una fecha especificada
+git log --after="2010-03-04 00:00:00"
+
+# Mostrar cambios realizados antes de una fecha especificada
+git log --before="2010-03-04 00:00:00"
+
+# Mostrar cambios en un rango de fecha
+git log --after="2010-03-04 00:00:00" --before="2010-03-04 00:00:00"
+
+# Mostrar TODO el registro de acciones (inserciones, cambios, eliminaciones, fusiones, etc.)
+git reflog
+
+# Mostrar diferencias entre el Working Directory y el Staging Area
+git diff
+
+# Mostrar en forma de grafico los cambios realizados
+git log --oneline --graph --all
+```

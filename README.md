@@ -1,4 +1,4 @@
-# GIT
+# **GIT**
 
 - Software controlador de versiones.
 - Interfaces Graficas:
@@ -11,26 +11,57 @@
   - GitLab
   - BitBucket
 
-## Configuración Inicial
+## **Configuración Inicial**
 
 Trabajando desde GitBash uso el comando `git --version` puedo saber que version de Git es la que tengo instalada.
 
 Debo hacer la configuración global:
 
-- `git config --global user.name "Nombre de Usuario` - configura el usuario.
-- `git config --global user.email emaildeusuario` - configura el mail. Es importante que sea el mismo con el que vamos a tener la cuenta de GitHub.
-- `git config --global user.ui true` - Activa los colores en la ui de la terminal.
-- `git config --list` - Nos muestra la configuracion de Git.
-- `git config --global core.editor "code --wait` - Hace que Visual Studio Code se vuelva el editor para configurar archivos.
-- `git config --global -e` - Es para hacer una edición a la configuración global desde el editor seleccionado.
-- `git config --global core.autocrlf true` - Sirve para estandarizar los saltos de linea en Windows.
-- `git config --global core.autocrlf input` - Sirve para estandarizar los saltos de linea en Linux o Mac.
-- `git config -h` - Sirve para ver todas las opciones de la configuración en la terminal.
-- `git help config` - Sirve para ver todas las opciones de la configuración en el navegador.
+```markdown
+# Configurar el usuario
+
+git config --global user.name "Nombre de Usuario"
+
+# Configurar el mail siendo el mismo que el de la cuenta de GitHub
+
+git config --global user.email emaildeusuario
+
+# Activar los colores en la ui de la terminal
+
+git config --global user.ui true
+
+# Mostrar la configuración de Git
+
+git config --list
+
+# Hacer que VS Code se vuelva el editor para configurar archivos
+
+git config --global core.editor "code --wait"
+
+# Hacer una edición a la configuración global desde el editor seleccionado
+
+git config --global -e
+
+# Estandarizar los saltos de linea en Windows
+
+git config --global core.autocrlf true
+
+# Estandarizas los saltos de line en Linux o Mac
+
+git config --global core.autocrlf input
+
+# Ver todas las opciones de la configuración en la terminal
+
+git config -h
+
+# Ver todas las opciones de la configuración en el navegador
+
+git help config
+```
 
 Con `--global` configuras el Git para todas las carpetas del sistema operativo.
 
-## Inicializar Git en directorio local
+## **Inicializar Git en directorio local**
 
 Debemos crear un archivo "README.md" y un archivo ".gitignore".
 
@@ -38,7 +69,7 @@ Para que la carpeta donde se encuentran estos archivos ya empiece a ser trakeada
 
 Y por ultimo vamos a usar "`code .`" para poder seguir trabajando desde el editor de codigo VS Code.
 
-## Flujo Básico
+## **Flujo Básico**
 
 Consta de cuatro estados, tres locales y uno remoto. Estos estados son **_modified_**, **_staged_**, **_committed_** y **_remote_**. Cada uno de ellos corresponde a un área de trabajo:
 
@@ -88,7 +119,7 @@ Si quiero descargar todos los cambios realizas desde GitHub utilizo:
 
 `git pull`
 
-## De _master_ a _main_
+## **De _master_ a _main_**
 
 ### Para repositorios nuevos
 
@@ -128,7 +159,7 @@ Para remplazar la rama _master_ por _main_ en GitHub debo usar los siguientes pa
 
 5. `git push origin --delete master`
 
-## Ayuda
+## **Ayuda**
 
 Si necesito ayuda para los comando de _git_ puedo usar los siguientes codigos en la terminal:
 
@@ -140,7 +171,7 @@ Si necesito ayuda para los comando de _git_ puedo usar los siguientes codigos en
 
   `git help nombrecomando`
 
-## Ignorar Archivos
+## **Ignorar Archivos**
 
 En el archivo _gitignore_ incluimos todo lo que **NO** queramos incluir en nuestro repositorio.
 
@@ -155,7 +186,7 @@ carpeta
 Si tengo que ignorar todos los archivos con un tipo de extension:
 
 ```
-*.ext
+\*.ext
 ```
 
 Y si quiero que sean todos excepto alguno en particular uso:
@@ -167,55 +198,66 @@ Y si quiero que sean todos excepto alguno en particular uso:
 Para ignorar archivos ciertos archivos dentro de una carpeta pongo la ubicacion y lo que quiero ignorar:
 
 ```
-doc/*.txt
+doc/\*.txt
 ```
 
 En caso de que haya subcarpetas las cuales tambien queres ignorarlas, utilizo:
 
 ```
-doc/**/*.txt
+doc/\*_/_.txt
 ```
 
-## Clonar Repositorio
+## **Clonar Repositorio**
 
 Si quiero clonar un repositorio, no importa de quien sea, simplemente tengo que escribir el comando:
 
 ```
+
 git clone urldelrepositorio.git
+
 ```
 
 En _GitHub_ ya te da la opcion de copiar la URL junto con _.git_ al final de la misma.
 
-## Ramas
+## **Ramas**
 
 Una rama nos permite aislar una funcionalidad del codigo. Sirve para crear codigos paralelos al codigo _main_ y luego añadirlos a codigo principal.
 
-```
+```markdown
 # crear rama
+
 git branch nombre-rama
 
 # cambiar de rama
+
 git checkout nombre-rama
 
 # crear una rama y cambiarte a ella
+
 git checkout -b rama
 
 # eliminar rama
+
 git branch -d nombre-rama
 
 # forzar eliminar rama
+
 git branch -D nombre-rama
 
 # listar todas las ramas del repositorio
+
 git branch
 
 # listar ramas no fusionadas a la rama actual
+
 git branch --no-merged
 
 # lista ramas fusionadas a la rama actual
+
 git branch --merged
 
 # rebasar ramas
+
 git checkout rama-secundaria
 git rebase rama-principal
 ```
@@ -232,12 +274,12 @@ Hay dos tipos de fusiones:
 
 Los comandos para fusionar son:
 
-```
-# Primero hacemos el cambio a la rama principal donde se hará la fusión
+```markdown
+# Hacer cambio a la rama principal donde se hará la fusión
 
 git checkout rama-principal
 
-# Ejecutamos el comando de fusión con la rama que se va a fusionar con la principal.
+# Ejecutar el comando de fusión con la rama que se va a fusionar con la principal.
 
 git merge rama-secundaria
 ```
@@ -248,7 +290,7 @@ En el caso de que la fusión sea _**Manual Merge**_ hay que resolver los problem
 
 Se pueden modificar los ultimos cambios realizados.
 
-```
+```markdown
 # Agrega los cambios sin editar el mensaje del ultimo commit
 
 git commit --amend --no-edit
@@ -278,35 +320,45 @@ El realizar cambios despues de hacer un _push_ va a provocar conflictos los cual
 
 El comando `git log` nos permite conocer todo el historial de un proyecto.
 
-```
+```markdown
 # Mostrar en una sola línea
+
 git log --oneline
 
 # Guardar el log en la ruta y archivo que especificamos
+
 git log > commits.txt
 
 # Mostrar el historial con el formato que indicamos
+
 git log --pretty=format:"%h - %an, %ar : %s"
 
 # Mostrar cierta cantidad de cambios, remplazando la n por la cantidad
+
 git log -n
 
 # Mostrar cambios realizados después de una fecha especificada
+
 git log --after="2010-03-04 00:00:00"
 
 # Mostrar cambios realizados antes de una fecha especificada
+
 git log --before="2010-03-04 00:00:00"
 
 # Mostrar cambios en un rango de fecha
+
 git log --after="2010-03-04 00:00:00" --before="2010-03-04 00:00:00"
 
 # Mostrar TODO el registro de acciones (inserciones, cambios, eliminaciones, fusiones, etc.)
+
 git reflog
 
 # Mostrar diferencias entre el Working Directory y el Staging Area
+
 git diff
 
 # Mostrar en forma de grafico los cambios realizados
+
 git log --oneline --graph --all
 ```
 
@@ -314,23 +366,29 @@ git log --oneline --graph --all
 
 Podemos eliminar el historial de cambios de un proyecto.
 
-```
+```markdown
 # Mostrar listado de archivos nuevos, borrados o editados
+
 git status
 
 # Borrar HEAD
+
 git reset --soft
 
 # Borrar HEAD y Staging
+
 git reset --mixed
 
 # Borrar HEAD, Staging y Working Directory
+
 git reset --hard
 
 # Deshacer todos los cambios despues del commit indicado, preservando los cambios locales
+
 git reset id-commit
 
 # Desechar todo el historial y regresa al commit especificado
+
 git reset --hard id-commit
 ```
 
@@ -338,29 +396,37 @@ git reset --hard id-commit
 
 Se puede resetear el historial de cambioas de un repositorio para que quede como si lo acabarás de crear.
 
-```
+```markdown
 # Entrar en el repositorio
+
 cd carpeta-repositorio
 
 # Mover el archivo de configuracion a el directorio del usuario
+
 mv .git/config ~/saved_git_config
 
 # Forzar la eliminación de directorio .git
+
 rm -rf .git
 
 # Inicializar el directorio
+
 git init
 
 # Añadir todos los archivos
+
 git add .
 
 # Añadir el nuevo primer commit
+
 git commit -m "Primer commit"
 
 # Restaurar el archivo de la configuración
+
 mv ~/saved_git_config .git/config
 
 # Forzar el push para que no haya problemas
+
 git push --force origin main
 ```
 
@@ -368,22 +434,28 @@ Esta práctica se suele realizar par no tener tantas versiones o commits del arc
 
 ## Remotos
 
-```
-# Mostrar los origenes remotos del repositorio
+```markdown
+# mostrar los origenes remotos del repositorio
+
 git remote
 
 # Mostrar los origenes remotos con detalle
+
 git remote -v
 
 # Agregar un origen remoto
+
 git remote add nombre-origen https://github.com/usuario/repositorio.git
 
 # Renombrar un origen remoto
+
 git remote rename nombre-viejo nombre-nuevo
 
 # Eliminar un origen remoto
+
 git remote delete nombre-origen
 
 # Descargar una rama remota a local diferente a la principal
+
 git checkout --track -b rama-remota origin/rama-remota
 ```

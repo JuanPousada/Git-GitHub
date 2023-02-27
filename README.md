@@ -365,3 +365,25 @@ git push --force origin main
 ```
 
 Esta práctica se suele realizar par no tener tantas versiones o commits del archivo y ahorrar espacio. Es mas que nada para repositorios personales los cuales no haya problema con necesitar el historial de commits. No es recomendable hacerlo en un repositorio importante.
+
+## Remotos
+
+```
+# Mostrar los origenes remotos del repositorio
+git remote
+
+# Mostrar los origenes remotos con detalle
+git remote -v
+
+# Agregar un origen remoto
+git remote add nombre-origen https://github.com/usuario/repositorio.git
+
+# Renombrar un origen remoto
+git remote rename nombre-viejo nombre-nuevo
+
+# Eliminar un origen remoto
+git remote delete nombre-origen
+
+# Descargar una rama remota a local diferente a la principal
+git checkout --track -b rama-remota origin/rama-remota
+```

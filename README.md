@@ -459,3 +459,38 @@ git remote delete nombre-origen
 
 git checkout --track -b rama-remota origin/rama-remota
 ```
+
+## **Etiquetas**
+
+Nos permite versionar nuestro código, librería o proyecto.
+
+```markdown
+# Listar Etiquetas
+
+git tag
+
+# Crear una etiqueta
+
+git tag numero-version
+
+# Eliminar una etiqueta
+
+git tab -d numero-version
+
+# Mostrar información de una etiqueta
+
+git show numero-version
+
+# Sincronizar la etiqueta del repositorio local al remoto
+
+git add .
+git tag v1.0.0
+git commit -m "v1.0.0"
+git push origin numero-version
+
+# Generar una etiqueta anotada (con mensaje de commit)
+
+git add .
+git tag -a "v1.0.0" -m "Mensaje de la etiqueta"
+git push --tags
+```

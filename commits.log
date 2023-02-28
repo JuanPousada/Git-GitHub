@@ -1,3 +1,90 @@
+commit bc5ee09b834fa30ab4aa8a65c2b0638a7a66444b
+Merge: 91e5d79 bf4c1c8
+Author: Juan Pousada <125465705+JuanPousada@users.noreply.github.com>
+Date:   Mon Feb 27 17:05:41 2023 -0300
+
+    Merge pull request #1 from BarraZero/readme-barrazero
+    
+    Tamos testeando los cambios rey
+
+commit bf4c1c82a09cf7e2e5d835bef2b266486d073321
+Author: BarraZero <x_slipknotjc@hotmail.com>
+Date:   Mon Feb 27 16:56:04 2023 -0300
+
+    Haciendo mejores al README del repositorio
+
+commit 2d3c7196e0c088689bf5f17f3bdc0e586f282a06
+Author: BarraZero <x_slipknotjc@hotmail.com>
+Date:   Mon Feb 27 16:46:33 2023 -0300
+
+    Colaboracion en GitHub
+
+commit 6929b1119a0be6138d5988e84da5f0d0f55d9ed4
+Author: BarraZero <x_slipknotjc@hotmail.com>
+Date:   Mon Feb 27 16:39:24 2023 -0300
+
+    Cambio desde cuenta secundaria
+
+commit d4c53f462a10999b5d36326a7b24dfab762a813b
+Author: BarraZero <x_slipknotjc@hotmail.com>
+Date:   Mon Feb 27 16:35:13 2023 -0300
+
+    Cambio desde la otra cuenta
+
+commit 91e5d7975120645999001b06bb33ce5293e32b7f
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Mon Feb 27 13:18:32 2023 -0300
+
+    Agregando teoria de GitHub Pages
+
+commit eb0c4450e0bf4dc6549a459df8a1c962e229cc59
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Mon Feb 27 12:42:24 2023 -0300
+
+    Agregando imagen de flujo Git y poniendo fachero el index.html
+
+commit c4855ffe6a3d0fa690f3b7f2bb0101a9b6a2549c
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Mon Feb 27 12:16:28 2023 -0300
+
+    v1.0.0
+
+commit 2818300f8ab004c6f1bfe98b1012fc5b1eeb4332
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Mon Feb 27 11:57:02 2023 -0300
+
+    Mejorando legibilidad archivo README
+
+commit bc3a2f1dd7847b01623633a2d0e69ce3d3425ae4
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Mon Feb 27 11:21:51 2023 -0300
+
+    Agregando teoría de Remotos
+
+commit 909aa63dce976c08877987a1336da3d82a19e8ee
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Mon Feb 27 11:08:12 2023 -0300
+
+    Agregando teoria de Resetear un repositorio
+
+commit 1f3ca46c2ce87a88d79c3bea5c2be383fdbde9f6
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Mon Feb 27 10:00:53 2023 -0300
+
+    Agregando teoria de Reseteo del historial
+
+commit de29b84dbf32885ec392f18150da9ac900a86520
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Mon Feb 27 09:46:55 2023 -0300
+
+    Actualizando commits.txt a commits.log
+
+commit 7c4ba03146f92394493c253163066fb833bfe906
+Author: Juan Pousada <juanpousada99@gmail.com>
+Date:   Mon Feb 27 00:46:25 2023 -0300
+
+    Agregando teoria de Registros de historial
+
 commit acb209f4178033f742431a622b4884ad73886cdc
 Author: Juan Pousada <juanpousada99@gmail.com>
 Date:   Mon Feb 27 00:15:29 2023 -0300

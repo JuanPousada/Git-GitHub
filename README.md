@@ -521,9 +521,65 @@ git push origin gh-pages
 git pull origin gh-pages
 ```
 
-## Colaboración en GitHub
+## **Colaboración en GitHub**
 
-Tamos probando cosas mi rey
+Para poder colaborar en proyectos alojados en GitHub necesitamos hacer uso de los _forks_ y _pull requests_.
+
+Vamos a detallar paso a paso como realizar las colaboraciones.
+
+## Paso 1
+
+_Forkear_ el repositorio en el que vamos a colaborar.
+Para ello entramos al repositorio que queremos copiar en GitHub y vamos a la opción _fork_ que se encuentra arriba a la derecha. Al nuevo _fork_ se le puede poner el mismo nombre que el repositorio que queremos copiar o cambiarselo.
+
+## Paso 2
+
+Clonar en el equipo el equipo el repositorio.
+git clone https://github.com/usuario/repositorio.git
+
+## Paso 3
+
+Configurar los origenes remotos del repositorio local para tener ambos remotos.
+git remote rename origin fork
+git remote add origin URLRemotoOriginal
+
+## Paso 4
+
+Crear rama nueva en el _fork_ local y sincronizarla con el repositorio remoto.
+git checkout -b rama-nueva
+
+Una vez realizado todos los cambios que uno quiere:
+git push fork rama-nueva
+
+## Paso 5
+
+Configurar el repositorio para que acepte cambios (_pull requests_)
+En _GitHub_ ya me aparecerá la opcion "_Compare & pull request_" y entramos en ella. Realizamos los cambios correspondientes para que se le agrege al main del repositorio original nuestra nueva rama creada.
+
+## Paso 6
+
+Generar el _pull request_.
+Una vez generado podemos agregarle un comentario sobre los cambios realizados en el mismo para el portador del repositorio.
+
+## Paso 7
+
+Esperar la confirmacion de los cambios del dueño del repositorio.
+
+## Paso 8
+
+Borrar la rama en la que se trabajo los cambios y actualizar el repositorio local _forkeado_.
+
+Dentro de nuestro repositorio local ejecutamos los siguientes comandos:
+
+```
+git checkout main
+git pull origin main
+git push fork main
+git branch -d rama-nueva
+git push fork --delete rama-nueva
+```
+
+Por el lado del que recibe el cambio desde otro usuario es importante que una vez que acepto y hago el merge a mi repositorio remoto, actualice mi repositorio local con un `git pull`.
 
 [Official Site](https://juanpousada.github.io/learning-git/)
 

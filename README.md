@@ -65,7 +65,7 @@ Con `--global` configuras el Git para todas las carpetas del sistema operativo.
 
 Debemos crear un archivo "README.md" y un archivo ".gitignore".
 
-Para que la carpeta donde se encuentran estos archivos ya empiece a ser trakeada, debo usar el codigo `git init`. Este creara una carpeta oculta ".git" donde irá trakeando los procesos.
+Para que la carpeta donde se encuentran estos archivos ya empiece a ser trakeada, debo usar el codigo `git init`. Apartir de se momento, nuestro directorio pasará a ser el repositorio local. Este creara una carpeta oculta ".git" donde irá trakeando los procesos.
 
 Y por ultimo vamos a usar "`code .`" para poder seguir trabajando desde el editor de codigo VS Code.
 
